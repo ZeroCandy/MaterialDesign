@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--声明CardView资源属性-->
+    <declare-styleable name="CardView">
+        <attr name="cardBackgroundColor" format="color"/>
+        <attr name="cardCornerRadius" format="dimension"/>
+    </declare-styleable>
+    <!--定义CardView默认背景样式-->
+    <style name="CardView">
+        <item name="cardBackgroundColor">#FFFAFAFA</item>
+    </style>
+    <!--定义CardView黑色背景样式-->
+    <style name="CardView.Dark">
+        <item name="cardBackgroundColor">#FF202020</item>
+    </style>
+    <!--定义CardView亮色背景样式-->
+    <style name="CardView.Light">
+        <item name="cardBackgroundColor">#FFFAFAFA</item>
+    </style>
+
+</resources>

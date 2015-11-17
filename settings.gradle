@@ -1,0 +1,1 @@
+include ':app', ':cardview', ':snackbardemo', ':floatingactionbuttondemo', ':tablayoutdemo', ':appbarlayout', ':palettedemo', ':collapsingtoolbarlayoutdemo'

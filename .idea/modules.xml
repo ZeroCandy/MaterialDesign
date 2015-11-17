@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesign.iml" filepath="$PROJECT_DIR$/MaterialDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appbarlayout/appbarlayout.iml" filepath="$PROJECT_DIR$/appbarlayout/appbarlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cardview/cardview.iml" filepath="$PROJECT_DIR$/cardview/cardview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collapsingtoolbarlayoutdemo/collapsingtoolbarlayoutdemo.iml" filepath="$PROJECT_DIR$/collapsingtoolbarlayoutdemo/collapsingtoolbarlayoutdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatingactionbuttondemo/floatingactionbuttondemo.iml" filepath="$PROJECT_DIR$/floatingactionbuttondemo/floatingactionbuttondemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/palettedemo/palettedemo.iml" filepath="$PROJECT_DIR$/palettedemo/palettedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snackbardemo/snackbardemo.iml" filepath="$PROJECT_DIR$/snackbardemo/snackbardemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tablayoutdemo/tablayoutdemo.iml" filepath="$PROJECT_DIR$/tablayoutdemo/tablayoutdemo.iml" />
+    </modules>
+  </component>
+</project>
