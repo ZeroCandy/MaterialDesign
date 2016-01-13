@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
+
     <!--实现AppBarLayout和RecyclerView动作上的协调-->
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
 
         <!--（其子View提供滚出效果）实现ImageView和Toolbar效果上的协调-->
         <!--结合CollapsingToolbarLayout使用实现视差折叠效果-->
@@ -19,10 +19,12 @@
 
             <!--（提供滚出效果）提供可折叠的标题栏，其子View必须有Toolbar，且Toolbar无法设置标题，而是在该控件上进行设置-->
             <!--属性contentScrim：表示在滑动滚出的过程中自动变化到所指定的颜色-->
+            <!--属性expandedTitleMarginStart：表示展开时标题左边距-->
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/ctl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:expandedTitleMarginStart="10dp"
                 app:contentScrim="?attr/colorPrimary"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
                 <!--值parallax:表示当发生滚出效果时该控件将以视差效果进行折叠-->
@@ -30,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitXY"
-                    android:src="@drawable/banner"
+                    android:background="@drawable/banner"
                     app:layout_collapseMode="parallax" />
                 <!--值pin:表示当发生滚动效果时该控件将停靠在顶部-->
                 <android.support.v7.widget.Toolbar
