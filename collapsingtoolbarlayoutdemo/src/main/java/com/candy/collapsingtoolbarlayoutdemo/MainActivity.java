@@ -1,6 +1,7 @@
 package com.candy.collapsingtoolbarlayoutdemo;
 
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.Snackbar;
@@ -15,7 +16,7 @@ import com.candy.collapsingtoolbarlayoutdemo.adapter.RecyclerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CollapsingToolbarLayout ctl;
+    private CollapsingToolbarLayout mCTL;
     private Toolbar mToolbar;
     private RecyclerView mRecyclerView;
     private RecyclerAdapter mAdapter;
@@ -29,20 +30,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        ctl = ((CollapsingToolbarLayout) findViewById(R.id.ctl));
+        mCTL = ((CollapsingToolbarLayout) findViewById(R.id.ctl));
         mToolbar = ((Toolbar) findViewById(R.id.tb));
         mRecyclerView = ((RecyclerView) findViewById(R.id.rv));
         linearLayoutManager = new LinearLayoutManager(this);
 
-        //CollapsingToolbarLayout相关设置
-        ctl.setTitle("Cool");
+        /*CollapsingToolbarLayout相关设置*/
+
+        //设置标题
+        mCTL.setTitle("Cool UI");
+        //设置标题扩展的时候颜色为黑色
+        mCTL.setExpandedTitleColor(Color.BLACK);
+        //设置标题收缩的时候颜色为白色
+        mCTL.setCollapsedTitleTextColor(Color.WHITE);
         Palette.from(BitmapFactory.decodeResource(getResources(),R.drawable.banner))
                 .generate(new Palette.PaletteAsyncListener() {
                     @Override
                     public void onGenerated(Palette palette) {
                         Palette.Swatch swatch=palette.getDarkMutedSwatch();
                         //设置在滑动过程中自动变化到图片颜色
-                        ctl.setContentScrimColor(swatch.getRgb());
+                        mCTL.setContentScrimColor(swatch.getRgb());
                     }
                 });
 
